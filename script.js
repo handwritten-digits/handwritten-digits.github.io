@@ -81,7 +81,7 @@ submitBtn.addEventListener("click", async () => {
   }
 
   try {
-    const response = await fetch("http://osrspathfinder.com:8080/predict", {
+    const response = await fetch("https://osrspathfinder.com:8443/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ image: pixels }),
