@@ -31,6 +31,17 @@
         font-weight: bold;
         margin-top: 20px;
       }
+      #probabilities {
+        display: flex;
+        align-items: flex-end;
+        height: 120px;
+        margin-top: 20px;
+      }
+      #loading {
+        font-size: 18px;
+        margin-top: 10px;
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -41,7 +52,8 @@
       <button id="submitBtn">Predict</button>
     </div>
     <div id="prediction"></div>
-
+    <div id="loading">Predicting...</div>
+    <div id="probabilities"></div>
     <script src="script.js"></script>
   </body>
 </html>
